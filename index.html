@@ -3,48 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWS Portfolio - Moupriya Sarkar</title>
+    <title>Your Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        .container { width: 80%; margin: auto; padding: 20px; }
-        h1, h2 { color: #333; }
-        .project { background: white; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .project a { color: #007BFF; text-decoration: none; }
-        .project a:hover { text-decoration: underline; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .container {
+            padding: 2em;
+        }
+        h1, h2 {
+            font-size: 2em;
+            color: #333;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2em;
+            margin-top: 20px;
+        }
+        .project-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card h3 {
+            font-size: 1.5em;
+            color: #4CAF50;
+        }
+        .project-card p {
+            font-size: 1em;
+            color: #666;
+        }
+        .project-card a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>AWS Portfolio - Moupriya Sarkar</h1>
-        <p>Welcome to my AWS Portfolio. Below are some of the projects I've built using AWS services.</p>
-        
-        <div class="project">
-            <h2>🚀 Serverless API with AWS Lambda & API Gateway</h2>
-            <p>Built a cost-effective REST API using AWS Lambda, API Gateway, and DynamoDB.</p>
-            <p><strong>Technologies:</strong> AWS Lambda, API Gateway, DynamoDB, IAM, CloudWatch</p>
-            <a href="https://github.com/m-sarkar-10/serverless-api" target="_blank">🔗 View on GitHub</a>
+
+<header>
+    <h1>Moupriya Sarkar - AWS Portfolio</h1>
+    
+</header>
+
+<div class="container">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Order Processing System</h3>
+            <p>A serverless order processing system utilizing AWS Step Functions, Lambda, S3, and DynamoDB.</p>
+            <a href="https://github.com/M-sarkar-10/order-processing" target="_blank">View Project</a>
         </div>
-        
-        <div class="project">
-            <h2>📈 AWS Auto-Scaling & Load Balancer Setup</h2>
-            <p>Deployed a high-availability web app using EC2, Auto Scaling, and Load Balancer.</p>
-            <p><strong>Technologies:</strong> AWS EC2, Auto Scaling, Load Balancer, RDS</p>
-            <a href="https://github.com/m-sarkar-10/aws-auto-scaling" target="_blank">🔗 View on GitHub</a>
+        <div class="project-card">
+            <h3>Data Pipeline for ETL</h3>
+            <p>ETL pipeline built with AWS Glue and Python for processing and transforming large datasets.</p>
+            <a href="https://github.com/M-sarkar-10/data-pipeline" target="_blank">View Project</a>
         </div>
-        
-        <div class="project">
-            <h2>🔧 CI/CD Pipeline with AWS CodePipeline & CodeBuild</h2>
-            <p>Automated software deployment using AWS CodePipeline, CodeBuild, and CodeDeploy.</p>
-            <p><strong>Technologies:</strong> AWS CodePipeline, CodeBuild, CodeDeploy, EC2, S3</p>
-            <a href="https://github.com/m-sarkar-10/aws-cicd-pipeline" target="_blank">🔗 View on GitHub</a>
+        <div class="project-card">
+            <h3>CI/CD Pipeline for Python Applications</h3>
+            <p>A CI/CD pipeline for Python applications using GitHub Actions and AWS CodePipeline.</p>
+            <a href="https://github.com/M-sarkar-10/cicd-pipeline" target="_blank">View Project</a>
         </div>
-        
-        <div class="project">
-            <h2>📊 AWS Data Pipeline: ETL with S3, Glue & Redshift</h2>
-            <p>Built an ETL pipeline to process large datasets and load them into a Redshift warehouse.</p>
-            <p><strong>Technologies:</strong> AWS S3, Glue, Redshift, IAM, QuickSight</p>
-            <a href="https://github.com/m-sarkar-10/aws-data-pipeline" target="_blank">🔗 View on GitHub</a>
+        <div class="project-card">
+            <h3>AWS Monitoring & Logging System</h3>
+            <p>A comprehensive AWS monitoring and logging system utilizing CloudWatch and AWS Lambda.</p>
+            <a href="https://github.com/M-sarkar-10/aws-monitoring" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Scalable Data Processing Pipeline</h3>
+            <p>A scalable data processing pipeline using AWS Lambda, S3, and SNS for real-time processing.</p>
+            <a href="https://github.com/M-sarkar-10/data-processing" target="_blank">View Project</a>
         </div>
     </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Moupriya Sarkar | AWS Cloud Developer</p>
+</footer>
+
 </body>
 </html>
